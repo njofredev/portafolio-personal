@@ -1,7 +1,7 @@
 <nav>
     <ul>
         <li><a href="{% url 'home' %}">Inicio</a></li>
-        <li><a href="#">Tecnologías</a></li>
+        <li><a href="{% url 'tecnologias'%}">Tecnologías</a></li>
         <li><a href="{% url 'contact' %}">Contacto</a></li>
         {% if user.is_authenticated %}
             <li><a href="#">Expense Create</a></li>
@@ -12,21 +12,6 @@
             <li><a href="#">Expense List</a></li>
         {% else %}
 
-        {% endif %}
-    </ul>
-    <ul class="nav justify-content-end">
-        {% if user.is_authenticated %}
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="color: white;">
-                    <button type="button" class="btn btn-outline-light">Logout</button>
-                </a>
-            </li>
-        {% else %}
-            <li class="nav-item">
-                <a class="nav-link" href="#" style="color: white;">
-                    <button type="button" class="btn btn-outline-light">Login</button>
-                </a>
-            </li>
         {% endif %}
     </ul>
 </nav>

@@ -20,7 +20,6 @@ from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import handler404
-#from errorapp.views import error_404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,8 +28,8 @@ urlpatterns = [
     path('home/', include('homeApp.urls')),
     # ContactApp
     path('contact/', include('contactapp.urls')),
-    # BlogApp
-    #path('blog/', include('blogapp.urls')),
+    # tecnologiasApp
+    path('tecnologias/', include('tecnologiaapp.urls')),
     # AuthApp
     #path('auth/', include('authapp.urls')),
     # ExpensesApp
