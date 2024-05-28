@@ -1,8 +1,8 @@
 <nav>
     <ul>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="{% url 'home' %}">Inicio</a></li>
+        <li><a href="#">Tecnologías</a></li>
+        <li><a href="{% url 'contact' %}">Contacto</a></li>
         {% if user.is_authenticated %}
             <li><a href="#">Expense Create</a></li>
         {% else %}
