@@ -4,17 +4,27 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <div class="container text-center mt-5">
-        <div class="row align-items-center">
-            <div class="col-md-6 order-md-1">
-                <h1 style="color: #b2bed7; font-size: 72px;">Hola mundo!</h1>
-                <h2 style="color: #b2bed7; font-size: 48px;">Mi nombre es</h2>
-                <h3 style="color: #ff0; font-size: 32px;">Nicolás Alonso Jofré Andrade</h3>
-            </div>
-            <div class="col-md-6 order-md-2">
-                <img src="{% static 'img/perfil.jpg' %}"  alt="Perfil" style="width:60%; border-radius:50%; box-shadow: 0px 0px 20px rgba(106, 21, 162, 0.5);">
-            </div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md- d-flex justify-content-center order-md-1 order-1 mb-4 mb-md-0">
+            <img src="{% static 'img/perfil.jpeg' %}" alt="Perfil" class="img-fluid rounded-end m-3 p-2 profile-img" style="width: 50%;">
         </div>
-        <img align="center" src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7F400&center=true&vCenter=true&random=false&width=435&lines=Full+Stack+Developer+Django" alt="Typing SVG" />
     </div>
+    <div class="col-md-6 d-flex flex-column justify-content-center text-md-start text-center order-md-2 order-2">
+        <h1 class="display-1 text-primary">Hello, World!</h1>
+        <h2 class="display-4 text-secondary">Mi nombre es:</h2>
+        <h3 class="display-6 text-dark">Nicolás Jofré Andrade</h3>
+        <div class="d-flex justify-content-center mt-4 icon-container">
+            <a href="https://www.linkedin.com/" target="_blank" class="me-3">
+                <i class="fab fa-linkedin text-primary fs-3"></i>
+            </a>
+            <a href="https://github.com/your-github-username" target="_blank" class="me-3">
+                <i class="fab fa-github text-dark fs-3"></i>
+            </a>
+            <a href="mailto:your-email@example.com">
+                <i class="fas fa-envelope text-secondary fs-3"></i>
+            </a>
+        </div>
+    </div>
+</div>
 {% endblock %}

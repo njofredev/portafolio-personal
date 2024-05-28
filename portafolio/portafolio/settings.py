@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(+wso^flp8sc)qqya$l$z$09353hapglsbvge0p66si8k0z2m#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -120,13 +120,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-# Configuración de archivos estáticos
-STATIC_URL = '/static/'
+# Archivos estáticos
+STATIC_URL = 'static/'
 
-# Lista de directorios donde se encuentran los archivos estáticos
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
+    BASE_DIR / 'homeApp/static/',
 ]
+
+# Configuración para archivos multimedia (imágenes de perfil)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 
 # Default primary key field type
