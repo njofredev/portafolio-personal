@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'homeApp',
     'contactapp',
     'tecnologiaapp',
+    # django-distill
 ]
 
 MIDDLEWARE = [
